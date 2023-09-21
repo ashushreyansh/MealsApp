@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background: #343434;
+}
+.menuDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.outer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 80%;
+  background-color: blanchedalmond;
+  margin: 30px;
+  padding: 50px 0;
+}
+.innerImg {
+  width: 50%; /* Set the width of the circular div to 50% of the external div's width */
+  height: 50%; /* Set the height of the circular div to 50% of the external div's height */
+  border-radius: 50%; /* Create a circular shape */
+  background-color: #3498db; /* Background color for the circular div */
+  position: absolute; /* Position the circular div relative to the external div */
+  top: 50%; /* Center the circular div vertically */
+  left: 0; /* Align the circular div with the left edge of the external div */
+  transform: translate(-50%, -50%);
+}
+.contentLeft {
+  width: 50%;
+}
+.mealHeading {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.Instructions {
+  font-size: 18px;
+}
+.ingredientsBottom {
+  width: 80%;
+  padding: 50px 30px;
+  margin-bottom: 50px;
+  background-color: blanchedalmond;
+}
+.ingredients {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: left;
+  margin: 30px auto;
+}
+.ingredient-list,
+.measure-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredient-item,
+.measure-item {
+  margin-bottom: 10px;
+}

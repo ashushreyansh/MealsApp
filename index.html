@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Meals App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+      integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Meal Finder</h1>
+      </div>
+      <div class="favoriteDiv">
+        <button id="viewFavorites" class="favorites-button">
+          View Favorites
+        </button>
+      </div>
+      <div class="entry">
+        <form id="submit">
+          <div class="input-container">
+            <input id="search" type="text" placeholder="Search..." />
+            <button href="#" type="submit" class="icon-link">
+              <i class="fa fa-solid fa-magnifying-glass icon"></i>
+            </button>
+            <div class="suggestions" id="suggestions"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="mealHeading" id="mealHeading"></div>
+    <div class="meals" id="meals"></div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
